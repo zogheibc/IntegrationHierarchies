@@ -85,6 +85,7 @@ p <- ggplot(themedatalong, aes(x=Quote,
         legend.position = "none",
         axis.title.x = element_text(size=14, face="bold"),
         axis.title.y = element_text(size=14, face="bold"),
+        axis.text.y = element_text(size=11, face="bold"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         panel.background = element_blank()) + 

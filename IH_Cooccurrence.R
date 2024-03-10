@@ -63,7 +63,11 @@ edges <- data.frame(from = co$sp1, to = co$sp2, #undirected network so to/from d
                                    dashes = ifelse(co$p_lt <= 0.05, TRUE, FALSE))
 ##now plot our network (different layout options commented out)
 visNetwork(nodes = nodes, edges = edges) |>
-  visIgraphLayout(layout = "layout_on_grid")
+  visIgraphLayout(layout = "layout_on_grid") |>
+  visNodes(font = list(size = 14, color = "#000000"))
   #visIgraphLayout(layout = "layout_with_kk")
   #visIgraphLayout(layout = "layout_with_sugiyama")
+
+# visNetwork(nodes = nodes, edges = edges) |>
+#   visIgraphLayout(layout = "layout_on_grid")
 
